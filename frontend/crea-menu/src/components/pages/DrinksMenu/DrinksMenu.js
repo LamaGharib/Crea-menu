@@ -8,7 +8,7 @@ const DrinksMenu = () => {
     <Rapper>
       <DrinkType to="./Menu/DrinksMenu/Coffee">
         <img
-          src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/crea.jpg__500x233_q85_crop_subsampling-2_upscale.jpg"
+          src="https://images.unsplash.com/photo-1517640033243-dc06bb716df5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80"
           alt="coffee"
           width="300px"
         />

@@ -68,7 +68,7 @@ function App() {
             <Drinks />
           </Route>
 
-          <Route exact path="/:id">
+          <Route exact path="/Item/:id">
             <Item />"
           </Route>
           <Route exact path="/Cart">

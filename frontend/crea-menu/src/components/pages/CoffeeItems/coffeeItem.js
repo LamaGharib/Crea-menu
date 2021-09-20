@@ -14,7 +14,7 @@ const Coffee = () => {
         {isLoading && <Loading>Loading...</Loading>}
         <CoffeeList>
           {coffeeItems.map((coffeeItem) => (
-            <Item to={`/${coffeeItem.id}`} key={coffeeItem.id}>
+            <Item to={`/Item/${coffeeItem.id}`} key={coffeeItem.id}>
               <img
                 src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/crea.jpg__500x233_q85_crop_subsampling-2_upscale.jpg"
                 alt={coffeeItem.name}

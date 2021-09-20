@@ -6,23 +6,16 @@ import { Rapper, Text } from "../../../globalStyles";
 import { Holder } from "./Item.element";
 
 const Item = () => {
-  const [form, setForm] = useState("");
   const { menu, setCart, cart } = useContext(MenuContext);
   const id = useParams();
 
-  const item = menu.tea.filter((item) => {
+  const item = menu.coffee.filter((item) => {
     return item.id === id.id;
   });
 
   const onClick = () => {
     setCart((prev) => [item, ...prev]);
     console.log(cart);
-  };
-
-  const onChange = (e) => {
-    setForm(e.target.value);
-
-    console.log(form);
   };
 
   return (
@@ -32,7 +25,6 @@ const Item = () => {
         <Text>{item[0].price}</Text>
 
         <button onClick={onClick}>select</button>
-        <input onChange={onChange} value={form} />
       </Holder>
     </Rapper>
   );

@@ -6,27 +6,64 @@ const PORT = process.env.PORT || 5000;
 app.get("/api/menu", (req, res) => {
   res.json({
     coffee: [
-      { id: uuidv4(), name: "espresso", price: "2.10", img: "url" },
-      { id: uuidv4(), name: "black coffee", price: "2,10", img: "url" },
+      {
+        id: uuidv4(),
+        name: "espresso",
+        price: "2.10",
+        img: "uhttps://images.unsplash.com/photo-1475296204602-08d15839e95f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
+      },
+      {
+        id: uuidv4(),
+        name: "black coffee",
+        price: "2,10",
+        img: "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80",
+      },
 
-      { id: uuidv4(), name: "cappuccino", price: "2,40", img: "url" },
-      { id: uuidv4(), name: "latte", price: "2,40", img: "url" },
-      { id: uuidv4(), name: "espresso macchiato", price: "2,40", img: "url" },
-      { id: uuidv4(), name: "latte macchiaro", price: "2,80", img: "url" },
-      { id: uuidv4(), name: "flat white", price: "3.50", img: "url" },
+      {
+        id: uuidv4(),
+        name: "cappuccino",
+        price: "2,40",
+        img: "https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      },
+      {
+        id: uuidv4(),
+        name: "latte",
+        price: "2,40",
+        img: "https://images.unsplash.com/photo-1561882468-9110e03e0f78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
+      },
+      {
+        id: uuidv4(),
+        name: "espresso macchiato",
+        price: "2,40",
+        img: "https://images.unsplash.com/photo-1590138695581-1e82b57e78d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
+      },
+      {
+        id: uuidv4(),
+        name: "latte macchiaro",
+        price: "2,80",
+        img: "https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
+      },
+      {
+        id: uuidv4(),
+        name: "flat white",
+        price: "3.50",
+        img: "https://images.unsplash.com/photo-1466689923919-dbea2d43d41e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
+      },
       {
         id: uuidv4(),
         name: "dubbele latte/cappuccino",
         price: "3,70",
         img: "url",
       },
-      { id: uuidv4(), name: "dubbele espresso", price: "3,20", img: "url" },
+      {
+        id: uuidv4(),
+        name: "dubbele espresso",
+        price: "3,20",
+        img: "https://images.unsplash.com/photo-1584347958951-60d301fc9cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
+      },
       { id: uuidv4(), name: "irish coffee", price: "6,10", img: "url" },
       { id: uuidv4(), name: "hot chocolate", price: "2,60", img: "url" },
       { id: uuidv4(), name: "glass milk", price: "2", img: "url" },
-      { id: uuidv4(), name: "soj/oat milk", price: "0,40", img: "url" },
-      { id: uuidv4(), name: "whipped cream", price: "0,50", img: "url" },
-      { id: uuidv4(), name: "syrup", price: "0,40", img: "url" },
     ],
     tea: [
       { id: uuidv4(), name: "tea", price: "2.10", img: "url" },
@@ -287,6 +324,11 @@ app.get("/api/menu", (req, res) => {
       { id: uuidv4(), name: "tequilla silver", price: "4.50", img: "url" },
       { id: uuidv4(), name: "pernod", price: "4.50", img: "url" },
       { id: uuidv4(), name: "salmari", price: "3", img: "url" },
+    ],
+    extra: [
+      { id: uuidv4(), name: "soj/oat milk", price: "0,40", img: "url" },
+      { id: uuidv4(), name: "whipped cream", price: "0,50", img: "url" },
+      { id: uuidv4(), name: "syrup", price: "0,40", img: "url" },
     ],
   });
 });

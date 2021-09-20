@@ -14,7 +14,7 @@ const Tea = () => {
         {isLoading && <Loading>Loading...</Loading>}
         <TeaList>
           {teaItems.map((teaItem) => (
-            <Item to={`/${teaItem.id}`} key={teaItem.id}>
+            <Item to={`/Item/${teaItem.id}`} key={teaItem.id}>
               <img
                 src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/crea.jpg__500x233_q85_crop_subsampling-2_upscale.jpg"
                 alt={teaItem.name}
