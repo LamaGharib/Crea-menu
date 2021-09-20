@@ -3,11 +3,11 @@ const { v4: uuidv4 } = require("uuid");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
+app.get("/api/menu", (req, res) => {
   res.json({
     coffee: [
       { id: uuidv4(), name: "espresso", price: "2.10", img: "url" },
-      { name: "black coffee", price: "2,10", img: "url" },
+      { id: uuidv4(), name: "black coffee", price: "2,10", img: "url" },
 
       { id: uuidv4(), name: "cappuccino", price: "2,40", img: "url" },
       { id: uuidv4(), name: "latte", price: "2,40", img: "url" },
