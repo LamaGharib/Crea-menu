@@ -10,37 +10,37 @@ app.get("/api/menu", (req, res) => {
         id: uuidv4(),
         name: "espresso",
         price: "2.10",
-        img: "uhttps://images.unsplash.com/photo-1475296204602-08d15839e95f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
+        img: "https://images.unsplash.com/photo-1593412323862-55bd8bb39099?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
       },
       {
         id: uuidv4(),
         name: "black coffee",
-        price: "2,10",
+        price: "2.10",
         img: "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80",
       },
 
       {
         id: uuidv4(),
         name: "cappuccino",
-        price: "2,40",
+        price: "2.40",
         img: "https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
       {
         id: uuidv4(),
         name: "latte",
-        price: "2,40",
+        price: "2.40",
         img: "https://images.unsplash.com/photo-1561882468-9110e03e0f78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
       },
       {
         id: uuidv4(),
         name: "espresso macchiato",
-        price: "2,40",
+        price: "2.40",
         img: "https://images.unsplash.com/photo-1590138695581-1e82b57e78d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
       },
       {
         id: uuidv4(),
         name: "latte macchiaro",
-        price: "2,80",
+        price: "2.80",
         img: "https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
       },
       {
@@ -52,18 +52,33 @@ app.get("/api/menu", (req, res) => {
       {
         id: uuidv4(),
         name: "dubbele latte/cappuccino",
-        price: "3,70",
-        img: "url",
+        price: "3.70",
+        img: "https://images.unsplash.com/photo-1573333744806-07f420e5cb7a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
       },
       {
         id: uuidv4(),
         name: "dubbele espresso",
-        price: "3,20",
+        price: "3.20",
         img: "https://images.unsplash.com/photo-1584347958951-60d301fc9cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
       },
-      { id: uuidv4(), name: "irish coffee", price: "6,10", img: "url" },
-      { id: uuidv4(), name: "hot chocolate", price: "2,60", img: "url" },
-      { id: uuidv4(), name: "glass milk", price: "2", img: "url" },
+      {
+        id: uuidv4(),
+        name: "irish coffee",
+        price: "6.10",
+        img: "https://cdn.webshopapp.com/shops/20731/files/72386108/890x820x2/irish-coffee-glazen-2-stuks.jpg",
+      },
+      {
+        id: uuidv4(),
+        name: "hot chocolate",
+        price: "2.60",
+        img: "https://www.cookingclassy.com/wp-content/uploads/2018/10/hot-chocolate-15.jpg",
+      },
+      {
+        id: uuidv4(),
+        name: "glass milk",
+        price: "2",
+        img: "https://ak.picdn.net/shutterstock/videos/18659357/thumb/1.jpg",
+      },
     ],
     tea: [
       { id: uuidv4(), name: "tea", price: "2.10", img: "url" },
@@ -97,7 +112,7 @@ app.get("/api/menu", (req, res) => {
     tosti: [
       { id: uuidv4(), name: "cheese", price: "3", img: "url" },
       { id: uuidv4(), name: "cheese and ham", price: "3.60", img: "url" },
-      { id: uuidv4(), name: "pikant", price: "", img: "url" },
+      { id: uuidv4(), name: "pikant", price: "3.60", img: "url" },
     ],
     sandwich: [
       {
@@ -134,7 +149,7 @@ app.get("/api/menu", (req, res) => {
       {
         id: uuidv4(),
         name: "cheese sticks (7 pcs)",
-        price: "5,90",
+        price: "5.90",
         img: "url",
       },
       { id: uuidv4(), name: "chicken nuggets (7 pcs)", price: "", img: "url" },
@@ -165,7 +180,7 @@ app.get("/api/menu", (req, res) => {
         price: "4",
         img: "url",
       },
-      { id: uuidv4(), name: "nacho's with salsa", price: "3,20", img: "url" },
+      { id: uuidv4(), name: "nacho's with salsa", price: "3.20", img: "url" },
       {
         id: uuidv4(),
         name: "nacho's with guacamole",
@@ -326,9 +341,10 @@ app.get("/api/menu", (req, res) => {
       { id: uuidv4(), name: "salmari", price: "3", img: "url" },
     ],
     extra: [
-      { id: uuidv4(), name: "soj/oat milk", price: "0,40", img: "url" },
-      { id: uuidv4(), name: "whipped cream", price: "0,50", img: "url" },
-      { id: uuidv4(), name: "syrup", price: "0,40", img: "url" },
+      { id: uuidv4(), name: "oat milk", price: "0.40", img: "url" },
+      { id: uuidv4(), name: "soj milk", price: "0.40", img: "url" },
+      { id: uuidv4(), name: "whipped cream", price: "0.50", img: "url" },
+      { id: uuidv4(), name: "syrup", price: "0.40", img: "url" },
     ],
   });
 });

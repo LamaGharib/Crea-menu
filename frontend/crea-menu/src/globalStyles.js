@@ -47,5 +47,21 @@ export const Text = styled.p`
   text-decoration: none;
   text-align: center;
 `;
+export const Holder = styled.div`
+width:100%;
+height:100vh;
+display flex ;
+flex-flow : column wrap;
+background-color: yellow
+margin-top:40px;
+  
+& button {
+    background-color: black;
+    color: yellow;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+
+`;
 
 export default GlobalStyle;

@@ -18,6 +18,7 @@ export const Item = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: red;
 `;
 export const Coffee = styled.div`
 width :100%;

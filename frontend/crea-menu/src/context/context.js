@@ -6,6 +6,7 @@ export const MenuProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [cart, setCart] = useState([]);
+  const [total, setTotal] = useState(0);
   const data = async () => {
     try {
       setIsLoading(true);
@@ -22,7 +23,9 @@ export const MenuProvider = ({ children }) => {
   }, []);
 
   return (
-    <MenuContext.Provider value={{ menu, cart, setCart, isLoading, error }}>
+    <MenuContext.Provider
+      value={{ menu, cart, setCart, isLoading, error, total, setTotal }}
+    >
       {children}
     </MenuContext.Provider>
   );
