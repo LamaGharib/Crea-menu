@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Welcome, PhotoHolder, Images } from "./Home.elements";
 import { Rapper } from "../../../globalStyles";
-import { MenuContext } from "../../../context/context";
 
 const Home = () => {
   return (

@@ -18,11 +18,9 @@ export const Item = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
+  border: 2px black solid;
 `;
 export const Coffee = styled.div`
-width :100%;
-height:100vh
-background-color: cyan
-
+  width: 100%;
+  height: 100vh;
 `;

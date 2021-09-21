@@ -21,10 +21,12 @@ const Item = () => {
   const onClick = () => {
     setCart((prev) => [item, ...prev]);
     setTotal((prev) => prev + price);
-    console.log(cart);
   };
 
-  const addExtra = () => {};
+  const addExtra = (extra) => {
+    setCart((prev) => [...prev, extra]);
+    setTotal((prev) => prev + parseFloat(extra.price));
+  };
 
   return (
     <Rapper>
@@ -42,7 +44,7 @@ const Item = () => {
         <ExtraHolder>
           {extras.map((extra) => {
             return (
-              <button key={extra.id} onClick={addExtra}>
+              <button key={extra.id} onClick={() => addExtra(extra)}>
                 {extra.name} :
                 {new Intl.NumberFormat("de-DE", {
                   style: "currency",

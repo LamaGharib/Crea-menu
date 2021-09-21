@@ -2,8 +2,7 @@ import React, { useContext, useState } from "react";
 import { MenuContext } from "../../../context/context";
 import { Text } from "../../../globalStyles";
 import { Holder, Form, Button } from "./Cart.elements";
-import { FaTimes } from "react-icons/fa";
-
+const { v4: uuidv4 } = require("uuid");
 const Cart = () => {
   const { cart, total, setCart, setTotal } = useContext(MenuContext);
 
@@ -16,34 +15,45 @@ const Cart = () => {
     setTotal(0);
   };
   const removeItem = (item) => {
-    setCart(cart.filter((product) => product.id !== item.id));
+    const index = cart.indexOf(item);
+    setCart(cart.splice(index, 1));
+    if (cart.length === 0) {
+      setCart([]);
+    }
+
     setTotal((prev) => prev - item.price);
   };
 
   return (
     <Holder>
-      {cart.map((item) => (
-        <Text key="index">
-          {item.name} :
-          {new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR",
-          }).format(parseFloat(item.price))}
-          <Button onClick={() => removeItem(item)}>Remove</Button>
-        </Text>
-      ))}
-      <Form>
-        <input onChange={onChange} value={note} />
-      </Form>
-      <Text>
-        total :
-        {new Intl.NumberFormat("de-DE", {
-          style: "currency",
-          currency: "EUR",
-        }).format(total)}
-      </Text>
-      <Text>{note}</Text>
-      <Button onClick={onClick}>Pay</Button>
+      {cart.length === 0 ? (
+        <Text>You'r cart is empty</Text>
+      ) : (
+        <>
+          {cart.map((item) => (
+            <Text key={uuidv4()}>
+              {item.name} :
+              {new Intl.NumberFormat("de-DE", {
+                style: "currency",
+                currency: "EUR",
+              }).format(parseFloat(item.price))}
+              <Button onClick={() => removeItem(item)}>Remove</Button>
+            </Text>
+          ))}
+          <Form>
+            <input onChange={onChange} value={note} />
+          </Form>
+          <Text>
+            total :
+            {new Intl.NumberFormat("de-DE", {
+              style: "currency",
+              currency: "EUR",
+            }).format(total)}
+          </Text>
+          <Text>{note}</Text>
+          <Button onClick={onClick}>Pay</Button>
+        </>
+      )}
     </Holder>
   );
 };

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Holder = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: pink;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,11 +13,11 @@ export const Holder = styled.div`
 `;
 
 export const DrinkType = styled(Link)`
-  background-color: pink;
   width: 300px;
   margin: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px solid black;
 `;
