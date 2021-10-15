@@ -15,11 +15,7 @@ const Cart = () => {
     setTotal(0);
   };
   const removeItem = (item) => {
-    const index = cart.indexOf(item);
-    setCart(cart.splice(index, 1));
-    if (cart.length === 0) {
-      setCart([]);
-    }
+    setCart(cart.filter((product) => product.id !== item.id));
 
     setTotal((prev) => prev - item.price);
   };

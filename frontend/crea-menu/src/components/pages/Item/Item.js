@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-
 import { useParams } from "react-router-dom";
 import { MenuContext } from "../../../context/context";
 import { Rapper, Text } from "../../../globalStyles";
 import { Holder, ExtraHolder, Img } from "./Item.element";
+const { v4: uuidv4 } = require("uuid");
 
 const Item = () => {
   const { menu, setCart, setTotal, cart } = useContext(MenuContext);
@@ -19,12 +19,18 @@ const Item = () => {
   const price = parseFloat(item.price);
 
   const onClick = () => {
-    setCart((prev) => [item, ...prev]);
+    setCart((prev) => [
+      { id: uuidv4(), name: item.name, price: item.price },
+      ...prev,
+    ]);
     setTotal((prev) => prev + price);
   };
 
   const addExtra = (extra) => {
-    setCart((prev) => [...prev, extra]);
+    setCart((prev) => [
+      ...prev,
+      { id: uuidv4(), name: extra.name, price: extra.price },
+    ]);
     setTotal((prev) => prev + parseFloat(extra.price));
   };
 
