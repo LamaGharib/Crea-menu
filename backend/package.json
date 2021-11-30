@@ -19,8 +19,11 @@
   "homepage": "https://github.com/LamaGharib/Crea-menu#readme",
   "dependencies": {
     "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
+    "stripe": "^8.184.0",
     "uuid": "^8.3.2"
   }
 }

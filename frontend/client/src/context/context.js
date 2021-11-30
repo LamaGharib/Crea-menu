@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from "react";
 export const MenuContext = createContext();
 
 export const MenuProvider = ({ children }) => {
@@ -7,14 +7,16 @@ export const MenuProvider = ({ children }) => {
   const [error, setError] = useState(false);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
+
   const data = async () => {
     try {
       setIsLoading(true);
-      const result = await fetch('http://192.168.2.17:5000/api/menu');
-      const jsonData = await result.json();
-      setMenu(jsonData);
+      const result = await fetch("http://localhost:5000/api/menu");
+      const data = await result.json();
+      setMenu(data);
       setIsLoading(false);
     } catch (error) {
+      console.log(error.message);
       setError(true);
     }
   };
@@ -24,7 +26,15 @@ export const MenuProvider = ({ children }) => {
 
   return (
     <MenuContext.Provider
-      value={{ menu, cart, setCart, isLoading, error, total, setTotal }}
+      value={{
+        menu,
+        cart,
+        setCart,
+        isLoading,
+        error,
+        total,
+        setTotal,
+      }}
     >
       {children}
     </MenuContext.Provider>
