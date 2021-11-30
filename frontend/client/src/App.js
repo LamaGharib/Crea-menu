@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Container>
           <Switch>
-            <Route exact path="/Drinks">
+            <Route exact path="/">
               <Drinks />
             </Route>
             <Route exact path="/Food">

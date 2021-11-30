@@ -25,7 +25,7 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "white" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/Drinks">
+            <NavLogo to="/">
               <img
                 src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/crea.jpg__500x233_q85_crop_subsampling-2_upscale.jpg"
                 alt="logo"
@@ -38,7 +38,7 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/Drinks">DRINKS</NavLinks>
+                <NavLinks to="/">DRINKS</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/Food">FOOD</NavLinks>
