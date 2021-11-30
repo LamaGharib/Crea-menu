@@ -32,6 +32,10 @@ export const ItemHolder = styled.div`
   align-items: center;
   width: 20%;
   font-weight: bold;
+  @media only screen and (max-width: 1024px) {
+    flex: 1;
+    margin-right: 10px;
+  } ;
 `;
 
 export const Total = styled.div`
