@@ -366,7 +366,7 @@ app.get("/api/menu", (req, res) => {
             {
               id: uuidv4(),
               name: "tuti: homemade granola banana honey with cinnamon ",
-              price: "",
+              price: "3.60",
             },
           ],
         },
