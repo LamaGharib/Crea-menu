@@ -13,6 +13,7 @@ export const CartItem = styled.div`
   margin: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px;
   border: 2px black solid;
   border-radius: 10px;
@@ -53,4 +54,5 @@ export const Remove = styled.button`
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
+  height: 30px;
 `;
