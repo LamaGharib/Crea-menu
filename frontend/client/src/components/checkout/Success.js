@@ -10,7 +10,7 @@ const Success = ({ history }) => {
       <h2>
         we will bring your order to the table number provided when its ready
       </h2>
-      <Button onClick={() => history.push("/Drinks")}>Go Back</Button>
+      <Button onClick={() => history.push("/")}>Go Back</Button>
     </Holder>
   );
 };

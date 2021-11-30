@@ -9,7 +9,7 @@ const Canceled = ({ history }) => {
       <Holder>
         <h1>payment failed</h1>
         <p>payment was not successful</p>
-        <Button onClick={() => history.push("/Drinks")}> Go Back</Button>
+        <Button onClick={() => history.push("/")}> Go Back</Button>
       </Holder>
     </>
   );
