@@ -70,7 +70,7 @@ const Tray = () => {
     const result = table.find((element) => element === number);
     if (result === undefined) {
       setNumber("");
-      alert("this table number dose not exist please inter the correct number");
+      alert("this table number dose not exist please enter the correct number");
     } else {
       setIsTable(true);
     }
