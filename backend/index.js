@@ -501,7 +501,6 @@ app.get("/api/menu", (req, res) => {
 });
 
 app.post("/create-checkout-session", createCheckoutSession);
-app.listen(PORT);
 
 app.post("/payment-sheet", async (req, res) => {
   // Use an existing Customer ID if this is a returning customer.
@@ -525,3 +524,5 @@ app.post("/payment-sheet", async (req, res) => {
       "pk_test_51Jqi9aAg50PTL4nV85GFOxlCbrQ9OdD8kghrsJ7WbDOr4FBkJFQCgu1k5xVqzzdyz2I8F93ktwDIYwmXVOKG0p6x00stWe4QlR",
   });
 });
+
+app.listen(PORT);

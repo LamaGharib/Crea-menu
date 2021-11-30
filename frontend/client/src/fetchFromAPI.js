@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = process.env.REACT_APP_API;
 const fetchFromAPI = async (endpoint, opts) => {
   const { method, body } = { method: "POST", body: null, ...opts };
   const res = await fetch(`${API}/${endpoint}`, {

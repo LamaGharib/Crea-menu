@@ -11,7 +11,7 @@ export const MenuProvider = ({ children }) => {
   const data = async () => {
     try {
       setIsLoading(true);
-      const result = await fetch("http://localhost:5000/api/menu");
+      const result = await fetch("https://crea-menu.herokuapp.com/api/menu");
       const data = await result.json();
       setMenu(data);
       setIsLoading(false);
