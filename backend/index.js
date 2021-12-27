@@ -437,27 +437,13 @@ app.get("/api/menu", (req, res) => {
               name: "mix snacks small (12 pcs)",
               price: "10",
             },
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 66bea270a147cc296e8584cbdf34a596fdc27540
             {
               id: uuidv4(),
               name: "mix snacks big (20 pcs)",
               price: "16",
             },
-<<<<<<< HEAD
-
-=======
-          
             
-            {
-              id: uuidv4(),
-              name: "mix snacks small (12 pcs)",
-              price: "10",
-            },
->>>>>>> 66bea270a147cc296e8584cbdf34a596fdc27540
             { id: uuidv4(), name: "mixed nuts", price: "2.80" },
             {
               id: uuidv4(),
