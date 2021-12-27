@@ -22,7 +22,7 @@ const createCheckoutSession = async (req, res) => {
   } catch (error) {
     console.log(error);
     res
-      .status(400)
+      .status(500)
       .json({ error: "an error occurred, unable to create session " });
   }
 };
