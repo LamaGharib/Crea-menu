@@ -430,28 +430,21 @@ app.get("/api/menu", (req, res) => {
             {
               id: uuidv4(),
               name: "chicken nuggets (7 pcs)",
-              price: "",
+              price: "5.90",
             },
             {
               id: uuidv4(),
               name: "mix snacks small (12 pcs)",
               price: "10",
             },
-            {
-              id: uuidv4(),
-              name: "chicken nuggets (7 pcs)",
-              price: "",
-            },
+          
             {
               id: uuidv4(),
               name: "mix snacks big (20 pcs)",
               price: "16",
             },
-            {
-              id: uuidv4(),
-              name: "chicken nuggets (7 pcs)",
-              price: "",
-            },
+          
+            
             {
               id: uuidv4(),
               name: "mix snacks small (12 pcs)",
